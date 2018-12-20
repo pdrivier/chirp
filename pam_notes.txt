@@ -1,0 +1,26 @@
+ERROR: 
+
+There seems to be an error in the CountRipples.m function. The output error when running PlotExample.m indicates that spcount and other variables are not assigned during the call. When going through CountRipples.m step by step, the second for loop is not entered into at all because the variable L, which defines the number of iterations that the for loop should undergo, is set to 0. 
+
+L = length(inpseq.on), and this is resulting in a 0
+
+TODO: 
+	- figure out where inpseq.on is defined, and what, exactly, is it defining?
+
+inpseq.on is defined in RunExamples.m
+
+THE PROBLEM SOURCE: 
+	- starts = 1.1:0.22:T , but T = 1, so the result: starts = []
+SOLUTION: 
+	- changed T = 1 to T = 2
+
+ERROR:
+
+Undefined function or variable ‘xl’, in PlotExample (line 19)
+
+PROBLEM SOURCE: xl = rat-0.02 & xr = rpt+rpl+0.02 were defined after the call for them in xlim([xl xr])
+
+SOLUTION: 
+
+Moved the definition above the first call of these variables, now in PlotExample line 21
+
