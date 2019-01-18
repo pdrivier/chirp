@@ -247,7 +247,7 @@ for secNum = 1:T
         sIE = sIEend;
         
         % there can be more than one input per second
-        tmin = (secNum-1)*1000-100;
+        tmin = (secNum-1)*1000-100;    % here put an if statement to skip this line
         k1 = find(starts>=tmin,1);
         tmax = secNum*1000+20;
         k2 = find(starts>=tmax,1);

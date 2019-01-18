@@ -1,7 +1,7 @@
 %% summary plots - samples of default case
 % close all
 clear
-s = 'sim1_Edctimes2_simdur2sec'; % original var definition: 'example_1.mat';
+s = 'tst_1secsim.mat'; % original var definition: 'example_1.mat';
 load(s);
 rpick = 3; % select ripple to plot (original val = 2)
 % inputs, rastergram, lfp and filteredLFP

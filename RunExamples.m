@@ -8,7 +8,7 @@ NE = 800; % number of excitatory cells
 NI = 160; % number of inhibitory interneurons
 
 inpseq.slp = 3; %[=]ms slope of current activation (bell shaped)
-starts =  1.1:0.22:T;
+starts =  1.1:0.22:T; % also put inside if statement to reduce T = 1
 inpseq.on =  starts*1000; % [=] ms sequence of input starts
 inpseq.length = 50; % [=] ms sequence of input ends
 
