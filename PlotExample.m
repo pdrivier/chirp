@@ -1,7 +1,7 @@
 %% summary plots - samples of default case
 % close all
 clear
-s = 'tst_1secsim.mat'; % original var definition: 'example_1.mat';
+s = 'sim10_weakPING_hippobook_simdur2sec.mat'; % original var definition: 'example_1.mat';
 load(s);
 rpick = 3; % select ripple to plot (original val = 2)
 % inputs, rastergram, lfp and filteredLFP
