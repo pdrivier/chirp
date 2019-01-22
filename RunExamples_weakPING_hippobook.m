@@ -1,7 +1,7 @@
 %%  call and run simulations
-close all
-clear
-clc
+% close all
+% clear
+% clc
 [pm] = defaultparamsCA1_weakPING_hippobook(); %T[=]s
 T = 2; %[=]s length of simulation
 NE = 800; % number of excitatory cells

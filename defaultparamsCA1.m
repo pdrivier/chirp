@@ -31,7 +31,7 @@ p.tauEd = 3.5; % timescale decay
 % EtoB
 p.tauEIr = 0.9; 
 p.tauEId = 3; %EPSP on inrn faster than on principal cells
-% BtoB 
+% BtoB %=basket-to-basket
 p.tauIr = 0.3;
 p.tauId = 2;  % Bartos et al 2002
 % BtoP is slower than BtoB
