@@ -21,9 +21,10 @@ for simulation = 1:2
     %RunExamples_weakPING_hippobook
     %RunExamples_weakPING02_hippobook
     %RunExamples_weakPING03_hippobook
-    RunExamples_weakPING_gmaxEEIdcgmaxII
+    %RunExamples_weakPING_gmaxEEIdcgmaxII
+    RunExamples_weakPING_gmaxEEIdc20pctincgmaxII
     
-    save(sprintf('sim%d_weakPING_gmaxEEIdcgmaxII_simdur2sec.mat',simulation),'conn','idc','inp','inpseq','Isynbar','lfp','NE','NI',...
+    save(sprintf('sim%d_weakPING_gmaxEEIdc20pctincgmaxII_simdur2sec.mat',simulation),'conn','idc','inp','inpseq','Isynbar','lfp','NE','NI',...
     'opt','pm','s','seqs','starts','T','tsp_E','tsp_I','vbar','veg')
    
 end 
