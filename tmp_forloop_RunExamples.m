@@ -26,6 +26,7 @@ for simulation = 1
     %RunExamples_weakPING_gmaxEEIdc20pctincgmaxII
     RunExamples_simdur5sec
     
+    sprintf('save begin')
     save(sprintf('sim%d_Edctimes2Idctimes2_simdur5sec.mat',simulation),'conn','idc','inp','inpseq','Isynbar','lfp','NE','NI',...
     'opt','pm','s','seqs','starts','T','tsp_E','tsp_I','vbar','veg')
    

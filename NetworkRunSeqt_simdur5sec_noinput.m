@@ -245,7 +245,8 @@ for secNum = 1:T
         wI = wIend;
         sI = sIend;
         sIE = sIEend;
-        bmps=[]; %MOD: added this to ensure the "if bmps~=0" statement is actionable
+        bmps=0; %MOD: added this to ensure the "if bmps~=0" statement is actionable
+        
         % there can be more than one input per second
         %MOD: follow Paola suggestion and include an if statement here to
         %skip this line:
